@@ -1,0 +1,147 @@
+.site__footer {
+	background-color: $color-grey;
+	background-size: cover;
+	background-position: center;
+	padding: 5rem 14rem;
+	display: grid;
+
+	grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+	color: $color-primary-blue;
+	align-items: center;
+
+	@include respond(tab-land) {
+		grid-template-columns: 1fr 1fr;
+		grid-auto-flow: row;
+		justify-content: center;
+		row-gap: 2rem;
+		column-gap: 4rem;
+	}
+
+	@include respond(phone) {
+		grid-template-columns: 1fr;
+	}
+}
+.footer {
+	&__brand {
+		justify-self: start;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+		@include respond(tab-land) {
+			grid-column: 1/-1;
+			align-items: center;
+		}
+
+		@include respond(phone) {
+			margin-bottom: 2rem;
+		}
+
+		&--image {
+			margin-bottom: 1.5rem;
+		}
+		&--text {
+			width: 75%;
+			font-size: 1.3rem;
+			color: $color-grey-blue;
+		}
+	}
+	&__contact {
+		margin-top: 2rem;
+		justify-self: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@include respond(tab-land) {
+			justify-self: start;
+		}
+		@include respond(phone) {
+			margin-bottom: 2rem;
+			justify-self: center;
+		}
+		&--list {
+			display: flex;
+			list-style-type: none;
+			justify-content: center;
+			flex-direction: column;
+			@include respond(tab-land) {
+				flex-direction: row;
+			}
+			&-item {
+				font-size: 1.5rem;
+				&:not(:last-child) {
+					margin-bottom: 0.5rem;
+					@include respond(tab-land) {
+						margin-right: 0.6rem;
+					}
+				}
+				span {
+					color: $color-grey-dark-3;
+					font-weight: bold;
+					font-size: 1.6rem;
+					@include respond(tab-land) {
+						margin-right: 50%;
+					}
+				}
+			}
+		}
+
+		&--head {
+			font-size: 2rem;
+			margin-bottom: 1rem;
+		}
+	}
+	&__links {
+		justify-self: end;
+		align-self: start;
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include respond(tab-land) {
+			justify-self: center;
+		}
+		@include respond(phone) {
+			justify-self: center;
+			margin-bottom: 2rem;
+		}
+		&--head {
+			font-size: 2rem;
+			margin-bottom: 1rem;
+			@include respond(tab-land) {
+				margin-bottom: 2rem;
+			}
+		}
+
+		ul {
+			display: flex;
+			list-style-type: none;
+			justify-content: center;
+			align-items: center;
+			li {
+				font-size: 1.5rem;
+				&:not(:last-child) {
+					margin-right: 5rem;
+				}
+				a:link,
+				a:visited {
+					text-decoration: none;
+					color: $color-primary-blue;
+					text-transform: uppercase;
+					display: inline-block;
+					transition: all 0.2s cubic-bezier(0.47, -0.22, 0.13, 0.41);
+				}
+				a:hover,
+				a:active {
+					background-color: $color-primary-blue;
+					color: $color-grey-light;
+					box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+					transform: rotate(5deg) scale(1.3);
+				}
+			}
+		}
+	}
+}

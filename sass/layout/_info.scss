@@ -1,0 +1,16 @@
+.section__info {
+	background-color: $color-grey-light;
+	padding: 15em 14rem;
+	margin-top: -2.5rem;
+	display: flex;
+	flex-direction: column;
+	@include respond(tab-land) {
+		margin-bottom: 2.5rem;
+	}
+}
+
+.info__body {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 4rem;
+}

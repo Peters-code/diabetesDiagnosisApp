@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Diabetes Diagnosis</title>
+		<link rel="stylesheet" href="./public/css/icon.css" />
+		<link rel="stylesheet" href="./public/css/icon2.css" />
+		<link rel="stylesheet" href="./public/css/styles.css" />
+	</head>
+	<body>
+		<!-- Overall grid system for the site -->
+		<div class="container-grid">
+			<!-- header including navigation and hero  -->
+			<header class="site__header">
+				<!-- site navigation -->
+				<nav class="navigation">
+					<div class="navigation__brand">
+						<a href="index.html">
+							<img
+								src="./public/images/logo-nav.svg"
+								alt="Brand Logo"
+								class="navigation__brand--image"
+							/>
+						</a>
+					</div>
+
+					<!-- Links -->
+					<ul class="navigation__list">
+						<li class="navigation__list-items">
+							<a
+								href="index.html"
+								class="navigation__link navigation__link--active"
+								>Home</a
+							>
+						</li>
+						<li class="navigation__list-items">
+							<a href="about.html" class="navigation__link">About</a>
+						</li>
+						<li class="navigation__list-items">
+							<a href="#footer" class="navigation__link">Contact Us</a>
+						</li>
+					</ul>
+					<a href="#" class="cta navigation__btn">Take a test</a>
+
+					<!-- TODO TOGGLE NAVIGATION -->
+					<!-- <div class="nav__toggler">
+						<span class="toggle-nav">&#9776;</span>
+					</div> -->
+				</nav>
+				<!-- end of  navigation -->
+
+				<!-- Hero session -->
+				<div class="hero">
+					<div class="hero__message">
+						<h1 class="hero__message--heading">
+							<span>Smart</span> Diabetes Diagnosis
+						</h1>
+						<p class="hero__message--body">
+							Our expert system has been designed in such a way that patients
+							can be diagnosed remotely based on carefully selected symptoms
+							from our diagnosis system
+						</p>
+						<a href="#" class="cta hero__btn">
+							Signup as a New patient
+						</a>
+					</div>
+
+					<div class="hero__image">
+						<img
+							src="./public/images/undraw_doctor_kw5l.svg"
+							alt="Doctor patient"
+						/>
+					</div>
+				</div>
+				<!-- End of Hero -->
+			</header>
+			<!-- End of header -->
+
+			<!-- info section -->
+			<section class="section__info">
+				<h2 class="info__heading">
+					What we Offer
+				</h2>
+				<div class="info__body">
+					<div class="info__card">
+						<!-- picture -->
+						<div class="info__card--top info__card--top-1">
+							<h3 class="info__card--header">
+								<span class="info__card--header-1">Accuracy in diagnosis</span>
+							</h3>
+						</div>
+						<!-- h3 -->
+						<!-- paragrapgh -->
+						<p class="info__card--body">
+							The use of <span>Machine learning algorithms</span> ensure that
+							our system keeps improving on it's already precise diagnosis of
+							diabetes and get better results
+						</p>
+					</div>
+
+					<div class="info__card">
+						<!-- picture -->
+						<div class="info__card--top info__card--top-2">
+							<h3 class="info__card--header">
+								<span class="info__card--header-2">Ease in testing</span>
+							</h3>
+						</div>
+						<!-- h3 -->
+						<!-- paragrapgh -->
+						<p class="info__card--body">
+							Our system makes use of an
+							<span>online testing platform</span> which takes in input from
+							users by just filling forms and gives results back in a short time
+						</p>
+					</div>
+
+					<div class="info__card">
+						<!-- picture -->
+						<div class="info__card--top info__card--top-3">
+							<h3 class="info__card--header">
+								<span class="info__card--header-3">Record tracking</span>
+							</h3>
+						</div>
+						<!-- h3 -->
+						<!-- paragrapgh -->
+						<p class="info__card--body">
+							As a result of the <span>use of databases</span> in our system we
+							have a record of each patient that is made available on demand by
+							a registered patient
+						</p>
+					</div>
+
+					<div class="info__card">
+						<!-- picture -->
+						<div class="info__card--top info__card--top-4">
+							<h3 class="info__card--header">
+								<span class="info__card--header-4">Health suggestions</span>
+							</h3>
+						</div>
+						<!-- h3 -->
+						<!-- paragrapgh -->
+						<p class="info__card--body">
+							After the testing is done and the results are in,
+							<span>we give suggestions</span> as to how to go forward with
+							regards to the individual test results
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- End of info section -->
+
+			<!-- Signup section -->
+			<section class="section__signup">
+				<h2 class="signup__heading">
+					Want to find out <span>How it works?</span>
+				</h2>
+				<h3 class="signup__subheading">
+					Take a test Now and Find out <span>.</span>
+				</h3>
+				<button class="signup__button">Sign up &rarr;</button>
+			</section>
+			<!-- End of sign up section -->
+
+			<footer id="footer" class="site__footer">
+				<div class="footer__brand">
+					<img
+						src="./public/images/logo-nav.svg"
+						class="footer__brand--image"
+						alt=""
+					/>
+					<p class="footer__brand--text">
+						We offer a quick and smart system. Patients can trust a 100%
+						efficient system with their health needs, diagnosis and prescription
+						without meeting the doctor physically
+					</p>
+				</div>
+
+				<div class="footer__contact">
+					<h3 class="footer__contact--head">
+						Contact Us
+					</h3>
+					<ul class="footer__contact--list">
+						<li class="footer__contact--list-item">
+							<span>Address:</span> Babcock University
+						</li>
+						<li class="footer__contact--list-item">
+							<span>Phone:</span> 08042534428
+						</li>
+						<li class="footer__contact--list-item">
+							<!-- icon -->
+							<span>Email:</span> name@email.com
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__links">
+					<h3 class="footer__links--head">
+						Useful Links
+					</h3>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="positive.html">About us</a></li>
+						<li><a href="">Take Test</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Modal form -->
+		<div class="modal">
+			<form action="/" id="regForm" class="form__register" method="POST">
+				<h2 class="form--heading">Signup</h2>
+				<div class="form__item form__item--signup-first">
+					<input
+						class="form__item--input"
+						autocomplete="off"
+						type="text"
+						id="firstName"
+						name="firstName"
+						required
+					/>
+					<label class="form__item--label" for="firstName">
+						<span class="form__item--label--span">First Name</span>
+					</label>
+				</div>
+
+				<div class="form__item form__item---signup-last">
+					<input
+						class="form__item--input"
+						autocomplete="off"
+						type="text"
+						id="lastName"
+						name="lastName"
+						required
+					/>
+					<label class="form__item--label" for="lastName">
+						<span class="form__item--label--span">Last Name</span>
+					</label>
+				</div>
+
+				<div class="form__item form__item--signup-dob">
+					<input
+						class="form__item--input"
+						autocomplete="off"
+						type="date"
+						id="dob"
+						name="dob"
+						required
+					/>
+					<label class="form__item--label" for="dob">
+						<span class="form__item--label--span date">dd/mm/yyyy</span>
+					</label>
+				</div>
+
+				<div class="form__item form__item--signup-mail">
+					<input
+						class="form__item--input"
+						autocomplete="off"
+						type="email"
+						id="email"
+						name="email"
+						required
+					/>
+					<label class="form__item--label" for="email">
+						<span class="form__item--label--span">Email address</span>
+					</label>
+				</div>
+
+				<div class="form__item form__item--signup-password">
+					<input
+						class="form__item--input"
+						autocomplete="off"
+						type="password"
+						id="pwd"
+						name="password"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+						required
+					/>
+					<label class="form__item--label" for="pwd">
+						<span class="form__item--label--span">Password</span>
+					</label>
+				</div>
+
+				<div class="form__item form__item--signup--confpass">
+					<input
+						class="form__item--input"
+						autocomplete="off"
+						type="password"
+						id="Cpwd"
+						name="confirm_password"
+						required
+					/>
+					<label class="form__item--label" for="Cpwd">
+						<span class="form__item--label--span">Confirm Password</span>
+					</label>
+				</div>
+
+				<button type="submit" class="form__btn" name="register">
+					Register
+				</button>
+			</form>
+
+			<!-- separating line -->
+			<div class="modal__line"></div>
+
+			<form action="/" id="loginForm" class="form__login">
+				<h2 class="form--heading">Login</h2>
+				<div class="form__item form__item--login-name">
+					<input
+						class="form__item--input"
+						autocomplete="off"
+						type="text"
+						id="userName"
+						name="firstName"
+						required
+					/>
+					<label class="form__item--label" for="userName">
+						<span class="form__item--label--span">First Name</span>
+					</label>
+				</div>
+				<div class="form__item form__item--login-pass">
+					<input
+						class="form__item--input"
+						autocomplete="off"
+						type="password"
+						id="userPwd"
+						name="firstName"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+						required
+					/>
+					<label class="form__item--label" for="userPwd">
+						<span class="form__item--label--span">password</span>
+					</label>
+				</div>
+				<button type="submit" class="form__btn" name="register">
+					Login
+				</button>
+			</form>
+
+			<button class="modal__clear">&#10006;</button>
+		</div>
+		<!-- End of overall grid system -->
+
+		<script>
+			// buttons
+			const heroBtn = document.querySelector('.hero__btn');
+			const signupBtn = document.querySelector('.signup__button');
+			const clearModal = document.querySelector('modal__clear');
+
+			const modal = document.querySelector('.modal');
+			const container = document.querySelector('.container-grid');
+
+			[heroBtn, signupBtn].forEach(button => {
+				button.addEventListener('click', openModal);
+			});
+
+			function openModal(e) {
+				// This is to prevent the window location from changing
+				e.preventDefault();
+
+				// open the modal
+				modal.classList.toggle('open');
+
+				// take focus away from the background
+				container.classList.toggle('close');
+			}
+
+			// Using event delegation
+			modal.addEventListener('click', closeModal);
+
+			function closeModal(e) {
+				if (e.target.classList.contains('modal__clear')) {
+					modal.classList.toggle('open');
+					container.classList.toggle('close');
+				}
+			}
+		</script>
+	</body>
+</html>

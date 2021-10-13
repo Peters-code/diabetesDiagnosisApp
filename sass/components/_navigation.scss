@@ -1,0 +1,98 @@
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: rgba($color-white, 0.9);
+	justify-content: space-between;
+	padding: 1.5rem 14rem;
+	border-bottom: 4px solid rgba($color-primary-blue, 0.2);
+
+	&__list {
+		display: flex;
+		list-style-type: none;
+		margin-left: 25rem;
+		@include respond(tab-port) {
+			margin-left: 10rem;
+		}
+
+		@include respond(phone) {
+			margin-left: 5rem;
+		}
+
+		//TODO navigation for mobile
+		// @include respond(phone) {
+		// 	display: flex;
+		// 	flex: 0 0 100%;
+		// 	order: 2;
+		// }
+		&-items {
+			cursor: pointer;
+			position: relative;
+			display: inline-block;
+			&:not(:last-child) {
+				margin-right: 5rem;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				display: inline-block;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: rgb(84, 110, 122);
+				transform: scaleX(0);
+				transform-origin: left;
+				transition: all 0.3s;
+			}
+
+			&:hover::after {
+				transform: scaleX(1);
+				transform-origin: right;
+			}
+		}
+	}
+	&__link {
+		&:link,
+		&:visited {
+			font-size: 1.85rem;
+			outline: none;
+			text-decoration: none;
+			color: $color-primary-blue;
+			display: inline-block;
+			position: relative;
+		}
+
+		&--active {
+			&:link,
+			&:visited {
+				color: $color-primary-lightblue-2;
+			}
+		}
+	}
+	&__btn {
+		padding: 1rem 2rem;
+	}
+}
+
+//TODO
+// .toggle-nav {
+// 	display: inline-block;
+// 	font-size: 4.2rem;
+// 	transition: transform 0.3s ease;
+// 	color: $color-white;
+// }
+
+// .nav__toggler {
+// 	width: 5rem;
+// 	height: 5rem;
+// 	background-color: $color-primary-lightblue;
+// 	border-radius: 50%;
+// 	display: none;
+// 	align-items: center;
+// 	justify-content: center;
+
+// 	@include respond(phone) {
+// 		display: flex;
+// 	}
+// }
